@@ -1,5 +1,5 @@
 const flipCard = document.querySelectorAll('.network-info');
-let ogTest =''
+let originalText =''
 
 
 const doStuff = function(e) {
@@ -7,7 +7,7 @@ const doStuff = function(e) {
     targetCard.classList.toggle('hover-target')
 
     let test = e.target.closest('div').querySelector('span');
-    ogTest = test.textContent;
+    originalText = test.textContent;
     test.textContent = 'More Details'
 
 
@@ -18,7 +18,7 @@ const fixStuff = function(e) {
     targetCard.classList.toggle('hover-target')
     
     let test = e.target.closest('div').querySelector('span');
-    test.textContent=ogTest
+    test.textContent=originalText;
 
 }
 
