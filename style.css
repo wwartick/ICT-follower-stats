@@ -15,7 +15,7 @@ body{
 .main-container{
     height: 32rem;
     width: 10rem;
-    border-top: 7px solid #E3E9C2;
+    border-top: 7px solid #69140E;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -45,12 +45,16 @@ h3{
     justify-content: center;
     box-shadow: 0 0 3px 4px #f8fbb294;
     gap: 5px;
-    transition: all 450ms linear;
-
+    transition: all 500ms linear;
+    
     &:hover{
         cursor: pointer;
         scale: 1.05;
-        transform: rotateY(180deg)
+        transform: rotateY(180deg);
+
+        ion-icon, span {
+            transform: rotateY(180deg);
+        }
     }
 
     &:active{
@@ -61,14 +65,14 @@ h3{
         font-weight: 800;
         font-size: 1.25rem;
         opacity: .75;
-        transition: all 450ms linear;
+        transition: all 500ms linear;
         
     }
 }
 
 ion-icon{
     font-size: 2.25rem;
-    transition: all 250ms linear;
+    transition: all 500ms linear;
 }
 
 #facebook{
@@ -91,15 +95,15 @@ button{
     font-size: 3.5rem;
     height: 2.75rem;
     width: 7.5rem;
-    color: #686c6e;
-    background-color:#E3E9C2;
+    color: #F9FBB2;
+    background-color:#69140E;
     box-shadow: 0 0 2px 2px #e3e9c279;
     border: none;
     border-radius: 3px;
 
     &:hover{
         cursor: pointer;
-        scale: 1.05;
+        scale: 1.1;
     }
 
     &:active{
@@ -107,3 +111,19 @@ button{
     }
 }
 
+.hover-target{
+    text-align: center;
+    background-color: #69140E;
+    box-shadow: 0 0 3px 4px #831e1760;;
+
+    >span {
+        color: white;
+        font-size: .75rem;
+        width: 50%;
+    }
+
+    >ion-icon{
+        font-size: 1.5rem;
+        color:white !important
+    }
+}
